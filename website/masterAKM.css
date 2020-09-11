@@ -1,0 +1,143 @@
+header{
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    border-top:solid 3px brown;
+    border-bottom:solid 10px gray;
+}
+.nav{
+    height: 100px;
+}
+.logo{
+    height: 100%;
+}
+.div1{
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.button{
+    font-size: 35px ;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: lightcoral;
+    background-color: lightcyan;
+    box-sizing: unset;
+    box-shadow: teal;
+    border-radius: 1.2rem;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.sec1{
+    width: 100%;
+    border-bottom: solid 10px gray; 
+    height: 700px;
+}
+.txt1{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+.sec2{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(139, 137, 132);
+    border-top: solid 1px gray;
+    font-size: 30px;
+    font-style: inherit;
+    text-align: center;
+}
+.div2:hover{
+   
+    background-color: rgb(163, 68, 158);
+        
+}
+.sec3{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(141, 172, 202);
+    border-top: solid 10px gray;
+    font-size: 30px;
+    font-style: inherit;
+    text-align: center;
+}
+.div3:hover{
+   
+    background-color: rgb(163, 68, 158);
+        
+}
+.sec4{
+    width: 100%;
+    background-color: rgb(145, 155, 170);
+    height: 200px;
+    border-top: solid 10px gray;
+    text-align: center;
+    font-family: fantasy;
+}
+.div4:hover{
+   
+    background-color: rgb(163, 68, 158);
+        
+}
+.div2{
+    position: absolute;
+    right: 33%;
+    height: 100px;
+    width: 30%;
+    border: solid 3px rgb(160, 75, 75);
+    text-align: center;
+    font-style: unset;
+    font-family: cursive;
+    font-size: 30px;
+    background-color: lightslategray;
+    border-radius: 1.3rem;
+
+}
+.div3{
+    position: absolute;
+    right: 1%;
+    height: 100px;
+    width: 30%;
+    border: solid 3px rgb(185, 88, 88);
+    text-align: center;
+    font-style: unset;
+    font-family: cursive;
+    font-size: 30px;
+    background-color: rebeccapurple;
+    border-radius: 1.3rem;
+
+}
+.div4{
+    position: absolute;
+    left: 1%;
+    height: 100px;
+    width: 30%;
+    border: solid 3px rgb(187, 88, 88);
+    text-align: center;
+    font-style: unset;
+    font-family: cursive;
+    font-size: 30px;
+    background-color: steelblue;
+    border-radius: 1.3rem;
+
+}
+footer{
+    width: 100%;
+    background-color: aquamarine;
+    border-top: solid 10px gray;
+    border-bottom: solid 3px brown;
+}
+.c1{
+    opacity: 0.1;
+    transition: all 0.4s ease;
+}
+span.fade{
+    opacity: 1;
+}
