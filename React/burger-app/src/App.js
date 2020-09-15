@@ -8,10 +8,10 @@ class App extends Component {
   render() {
     return (
       <div className={classes.App}>
-       <h1> My burger App</h1>
-       <Layout>
-         <BurgerBuilder/>
-       </Layout>
+        <h1> My burger App</h1>
+        <Layout>
+          <BurgerBuilder />
+        </Layout>
       </div>
     );
   }
