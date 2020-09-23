@@ -6,4 +6,4 @@ const multiply = require('./app');
 
 test ("Unit testing ", () => {
     expect(multiply(1,7)).toBe(7);
-})
+});
