@@ -1,0 +1,15 @@
+{
+  "name": "krazybeetesting",
+  "version": "1.0.0",
+  "description": "testing krazybee app",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress",
+    "cypress": "cypress open"
+  },
+  "author": "govind singh",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.5.0"
+  }
+}
