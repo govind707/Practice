@@ -17,24 +17,41 @@ describe("Play with krazybee App", () => {
             cy.get('div')
         })
         */
-       cy.get('.BBtn__BBtn-jiCKdh.dBKBDe').contains('Continue Application').click({force:true})
+       cy.get('.BBtn__BBtn-jiCKdh.dBKBDe')
+       .contains('Continue Application')
+       .click({force:true})
        .url()
-       .should('include','summary')
+       .should('eq','http://react-app-monica.s3-website-ap-southeast-1.amazonaws.com/profile/summary')
 
-       cy.get('.skins__SummaryCon-eWQpKA.gEpBCv').as('Con_app')
-       cy.get('@Con_app').children().should('have.length',7)
+       cy.get('.skins__SummaryCon-eWQpKA.gEpBCv')
+       .as('Con_app')
 
-       cy.get('@Con_app').within(() => {
 
-           cy.get('div').contains('KYC Documents')
+       cy.get('@Con_app')
+       .children()
+       .should('have.length',7)
 
-        //    .click()
-        //    .should('have.length',0)
-        //    .go('back')
-        cy.get('@Con_app').contains('Additional Information').should("have.text",'Additional Information')
-           
-       })
-       
+
+       cy.get('@Con_app')
+       .children()
+       .contains('KYC Documents')
+       .should('have.text','KYC Documents')
+
+
+       cy.get('@Con_app')
+       .children()
+       .contains('Additional Information')
+       .should('have.text','Additional Information')
+       .click()
+
+
+    //   cy.get('@Con_app').within(() => {
+
+    //        cy.get('div').contains('KYC Documents')
+
+    //     //    .click()
+    //     //    .should('have.length',0)
+    //     //    .go('back')
 
 
     });
