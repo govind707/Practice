@@ -11,6 +11,9 @@ describe("Burger app testing",() => {
         .get('input[type="password"]')
         .type('123456')
         .should('have.value','123456')
+        .get('button').contains('SUBMIT')
+        .click()
+        
     })
 })
 
