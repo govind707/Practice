@@ -1,5 +1,5 @@
 describe("Burger app testing",() => {
-    it ("Auth Testing", () => {
+    it.skip ("Auth Testing", () => {
         cy.visit('/')
         cy.get('a[href="/auth"]').contains('Authenticate')
         .click()
@@ -19,7 +19,7 @@ describe("Burger app testing",() => {
 
 
 describe("Burger App Testing", () => {
-    it("Ingredients Buttons Testing", () => {
+    it.skip("Ingredients Buttons Testing", () => {
         cy.visit('http://localhost:3000/')
         cy.get('div')
         .contains('Salad')
