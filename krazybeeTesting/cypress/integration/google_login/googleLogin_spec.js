@@ -1,7 +1,7 @@
 
 
 describe('Login', () => {
-    it('Login through Google', () => {
+    it.skip('Login through Google', () => {
      // cy.visit("https://www.bikewale.com/")  
       const username ="govind.thakur201097@gmail.com"
       const password = "govind@123"
