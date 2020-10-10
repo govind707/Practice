@@ -19,3 +19,20 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+
+const {GoogleSocialLogin} = require('cypress-social-logins').plugins
+
+module.exports = (on, config) => {
+  on('task', {
+    GoogleSocialLogin: GoogleSocialLogin
+  })
+}
+
+// module.exports = (on, config) => {
+//   on('task', {
+//     print( msg ){
+//       console.log(msg)
+//       return null;
+//     }
+//   })
+// }

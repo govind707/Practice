@@ -17,32 +17,90 @@ describe("Play with krazybee App", () => {
             cy.get('div')
         })
         */
-       cy.get('.BBtn__BBtn-jiCKdh.dBKBDe')
-       .contains('Continue Application')
-       .click({force:true})
-       .url()
-       .should('eq','http://react-app-monica.s3-website-ap-southeast-1.amazonaws.com/profile/summary')
+       cy.get('.skins__PdtListing-QkWkM.BcfPC').as('loan_info')
 
-       cy.get('.skins__SummaryCon-eWQpKA.gEpBCv')
-       .as('Con_app')
-
-
-       cy.get('@Con_app')
+       cy.get('@loan_info')
        .children()
-       .should('have.length',7)
+       .should('have.length',4)
 
-
-       cy.get('@Con_app')
+       cy.screenshot("SS_50,000",{log:true})
+       cy.get('@loan_info')
        .children()
-       .contains('KYC Documents')
-       .should('have.text','KYC Documents')
+       .eq(0)
+       .should('contain','50,000')
 
-
-       cy.get('@Con_app')
+       cy.screenshot("SS_2,0000",{log:true})
+       cy.get('@loan_info')
        .children()
-       .contains('Additional Information')
-       .should('have.text','Additional Information')
+       .eq(1)
+       .should('contain','2,00,000')
+
+       cy.screenshot("SS_1,00,000",{log:true})
+       cy.get('@loan_info')
+       .children()
+       .eq(2)
+       .should('contain','1,00,000')
+
+       cy.screenshot("SS_Continue-Application",{log:true})
+       cy.get('@loan_info')
+       .children()
+       .eq(3)
+       .should('contain','Continue Application')
        .click()
+
+
+       
+       cy.get('.skins__SummaryCon-eWQpKA.gEpBCv').as('profile_info')
+
+       cy.get('@profile_info')
+       .children()
+       .should('have.length',6)
+
+       cy.get('@profile_info')
+       .children()
+       .eq(4)
+       .should('contain','Additional Information')
+       .screenshot("before clicking button -Additional Information")
+       //.click()
+
+       //cy.task('print'," just checking working of task function ")
+       
+       
+       //cy.screenshot("after clicking button -Additional Information")
+
+    //    cy.get('@profile_info')
+    //    .children()
+    //    .eq(4)
+    //    .children()
+    //    .should('have.class','skins__SumTable-jlNanu.iJOTsf')
+    
+    
+    
+    
+    //    .click({force:true})
+    //    .url()
+    //    .should('eq','http://react-app-monica.s3-website-ap-southeast-1.amazonaws.com/profile/summary')
+
+    //    cy.get('.skins__SummaryCon-eWQpKA.gEpBCv')
+    //    .as('Con_app')
+
+
+    //    cy.get('@Con_app')
+    //    .children()
+    //    .should('have.length',7)
+
+
+    //    cy.get('@Con_app')
+    //    .children()
+    //    .contains('KYC Documents')
+    //    .should('have.text','KYC Documents')
+
+
+    //    cy.get('@Con_app')
+    //    .children()
+    //    .contains('Additional Information')
+    //    .should('have.text','Additional Information')
+       //.click()
 
 
     //   cy.get('@Con_app').within(() => {

@@ -11,6 +11,10 @@
   "author": "govind singh",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.5.0"
+    "cypress": "^4.5.0",
+    "cypress-social-logins": "^1.5.2"
+  },
+  "dependencies": {
+    "puppeteer": "^5.3.1"
   }
 }
