@@ -1,2 +1,2 @@
 # Practice
-Udemy Js Course
+Full Stack
