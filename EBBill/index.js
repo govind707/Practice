@@ -19,7 +19,7 @@ import { updateField, showErr, fetchEBProviders, submitEBBill, restoreModuleToIn
 import { BREmail } from 'BRegex';
 import commonMsg from '../../../components/Common/messages';
 import { injectIntl } from 'react-intl';
-import VerifyDetails from 'components/ExtraDetails/EBBill/VerifyDetails';
+import VerifyDetails from '../../../components/ExtraDetails/EBBill/VerifyDetails';
 import Providers from './provider';
 import evLog from '../../../EventLogger';
 import Info from './info';

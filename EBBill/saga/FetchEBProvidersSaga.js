@@ -8,7 +8,7 @@ import {
 	FETCH_EB_PROV_API
 } from '../constants';
 import { BTOAST_SHOW } from '../../Btoast/constants';
-import { pushHeaders } from '../../../CmnHeaders';
+import { pushHeaders } from '../../../../CmnHeaders';
 import log from '../../../loggerConfig';
 
 function* fetchEBProvidersWorker() {
